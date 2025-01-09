@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Sample data
     const rpcData = {
         avatarLeftUrl: "./assets/avatar.png",
-        avatarRightUrl: "https://i.imgur.com/E0hnFO2.gif",
+        avatarRightUrl: "https://i.imgur.com/GfSzyMS.gif",
         username: "Skye ♡",
         status: "In Love with Wine <3",
         details: "",
