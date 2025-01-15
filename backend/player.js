@@ -17,19 +17,19 @@ const tracks = [
     name: "C02", 
     artist: "Prateek Kuhad", 
     cover: "../assets/c02.jpg", 
-    src: "../assets/songs/C02.mp3" 
+    src: "../assets/songs/C02.MP3" 
   },
   { 
     name: "Mulaqaat", 
     artist: "AUR,Taimour Baig", 
     cover: "../assets/aur.jpeg", 
-    src: "../assets/songs/AUR.mp3" 
+    src: "../assets/songs/AUR.MP3" 
   },
   { 
     name: "Wo Noor", 
     artist: "AP Dhillon", 
     cover: "../assets/ap.jpg", 
-    src: "../assets/songs/NOOR.mp3" 
+    src: "../assets/songs/NOOR.MP3" 
   }
 ];
 
