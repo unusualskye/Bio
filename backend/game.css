@@ -1,0 +1,156 @@
+/* General Styling */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/game-background.gif') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    text-align: center;
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Dropdown Styling */
+  .dropdown {
+    margin: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .dropdown-header {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+  }
+  
+  .dropdown-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  
+  .game {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+    opacity: 0;
+  }
+  
+  .game img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .details h3 {
+    margin: 0;
+  }
+  
+  .details p {
+    margin: 0.2rem 0;
+  }
+  
+  /* Expand Animation */
+  .dropdown.open .dropdown-content {
+    max-height: 300px;
+    opacity: 1;
+  }
+  
+  .dropdown.open .game {
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  
+  .arrow-button-right {
+    position: fixed;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    background-image: url('../assets/arrow.png'); /* Add your custom image path here */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .arrow-button-right:hover {
+    transform: translateY(-50%) scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .arrow-button-right a {
+    color: transparent; /* Hide the text */
+    text-decoration: none;
+  }
+  
+  .arrow-button-left {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+    background-image: url('../assets/arrow.png'); /* Add your custom image path here */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .arrow-button-left:hover {
+    transform: translateY(-50%) scale(1.1);
+    background: rgba(255, 255, 255, 0.2);
+  }
+  .arrow-button-left a {
+    color: transparent; /* Hide the text */
+    text-decoration: none;
+  }
